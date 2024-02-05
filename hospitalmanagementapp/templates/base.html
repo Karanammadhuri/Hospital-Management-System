@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+
+    <title>{% block title %} {% endblock %}</title>
+
+
+
+{%  include 'navbar.html' %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.mySlides {display:none;}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+<center>
+<div class="w3-content w3-section" style="max-width:5000px">
+  <img class="mySlides" src="{% static 'images/hms.2.jpg' %}" width="1080" height="448"/>
+  <img class="mySlides" src="{% static 'images/hms.1.jpg' %}" width="1080" height="448"/>
+</div>
+    <div class="w3-content w3-section" style="max-width:5000px">
+    <div class="text">we are the team of excellence</div>
+  <img class="mySlides" src="{% static 'images/hms.3.jpg' %}" width="1080" height="448"/>
+    </div>
+</center>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+
+
+{% block body %} {% endblock %}
+
+</html>

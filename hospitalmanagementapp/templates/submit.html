@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+{%  include 'navbar.html' %}
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="{% static 'images/th.jpg' %}" width="1080" height="500"/>
+    <div class="centered">Your Booking was confrimed... You can track your appointment by 11:00 AM ,by Tommorow</div>
+</div>
+
+</body>
+</html>
+
