@@ -5,7 +5,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('hospiapp', '0009_auto_20200221_0242'),
+        ('hospitalmanagementapp', '0009_auto_20200221_0242'),
     ]
 
     operations = [
