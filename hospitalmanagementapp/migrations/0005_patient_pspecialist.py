@@ -7,7 +7,7 @@ import django.utils.timezone
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('hospiapp', '0004_delete_patientdetail'),
+        ('hospitalmanagementapp', '0004_delete_patientdetail'),
     ]
 
     operations = [
