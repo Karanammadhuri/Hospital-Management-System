@@ -7,7 +7,7 @@ from django.utils.timezone import utc
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('hospiapp', '0015_auto_20200224_0432'),
+        ('hospitalmanagementapp', '0015_auto_20200224_0432'),
     ]
 
     operations = [
