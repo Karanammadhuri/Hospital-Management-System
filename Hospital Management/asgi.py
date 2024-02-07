@@ -1,5 +1,5 @@
 """
-ASGI config for hospi project.
+ASGI config for hospital project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
