@@ -1,5 +1,5 @@
 from django import forms
-from hospiapp.models import Patient
+from hospitalmanagementapp.models import Patient
 
 class PatientForm(forms.ModelForm):
     class Meta:
