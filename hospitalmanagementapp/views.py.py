@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
-from hospiapp.forms import PatientForm
-from hospiapp.models import Patient
+from hospitalmanagementapp.forms import PatientForm
+from hospitalmanagementapp.models import Patient
 
 def home(request):
     return render(request,"home.html")
