@@ -1,5 +1,5 @@
 """
-WSGI config for hospi project.
+WSGI config for hospital project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
